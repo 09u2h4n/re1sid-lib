@@ -13,6 +13,17 @@ dependencies = [
     "lxml>=6.1.1",
     "pyaxmlparser>=0.3.31",
 ]
+
+[project.optional-dependencies]
+tui = ["textual>=8.2.8"]
+
+all = [
+    "httpx>=0.28.1",
+    "lxml>=6.1.1",
+    "pyaxmlparser>=0.3.31",
+    "textual>=8.2.8"
+]
+
 urls = { homepage = "https://github.com/09u2h4n/re1sid-lib", repository = "https://github.com/09u2h4n/re1sid-lib", documentation = "https://github.com/09u2h4n/re1sid-lib#readme" }
 
 [project.scripts]
