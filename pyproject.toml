@@ -1,6 +1,6 @@
 [project]
 name = "re1sid-lib"
-version = "0.1.3"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 license = { text = "Apache-2.0 license" }
@@ -24,7 +24,10 @@ all = [
     "textual>=8.2.8"
 ]
 
-urls = { homepage = "https://github.com/09u2h4n/re1sid-lib", repository = "https://github.com/09u2h4n/re1sid-lib", documentation = "https://github.com/09u2h4n/re1sid-lib#readme" }
+[project.urls]
+homepage = "https://github.com/09u2h4n/re1sid-lib"
+repository = "https://github.com/09u2h4n/re1sid-lib"
+documentation = "https://github.com/09u2h4n/re1sid-lib#readme"
 
 [project.scripts]
 re1sid-lib = "re1sid_lib:main"
