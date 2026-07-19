@@ -253,7 +253,7 @@ def _coerce(text: str) -> Any:
 # --------------------------------------------------------------------------- #
 
 
-class ReVancedTUI(App):
+class Re1sidTUI(App):
     """Textual front end for re1sid-lib."""
 
     TITLE = "re1sid-lib TUI"
@@ -602,7 +602,7 @@ class ReVancedTUI(App):
 
 
 def main() -> None:
-    ReVancedTUI().run()
+    Re1sidTUI().run()
 
 
 if __name__ == "__main__":

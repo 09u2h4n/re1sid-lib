@@ -82,6 +82,20 @@ output = patcher.patch_apk(
 print(output)
 ```
 
+### Patch an APK via terminal user interface
+
+Patch an APK file with tui
+
+## Installation
+
+```pip install re1sid["tui"]```
+
+```python
+from re1sid_lib import Re1sidTUI()
+
+Re1sidTUI().run()
+```
+
 ## Notes
 
 - `Downloader.download_all()` removes the `.revanced_res` directory before downloading fresh assets.

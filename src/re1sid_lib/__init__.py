@@ -1,5 +1,5 @@
 from .downloader import Downloader
 from .patcher import Patcher
-from .tui import ReVancedTUI
+from .tui import Re1sidTUI
 
-__all__ = ["Downloader", "Patcher", "ReVancedTUI"]
+__all__ = ["Downloader", "Patcher", "Re1sidTUI"]
