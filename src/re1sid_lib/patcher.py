@@ -3,7 +3,7 @@ import os
 from typing import List, Dict, Any, Union, Optional, Generator
 from pyaxmlparser import APK
 
-from common import PATCHES_PATH, CLI_PATH
+from .common import PATCHES_PATH, CLI_PATH
 
 
 class Patcher:

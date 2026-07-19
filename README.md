@@ -20,18 +20,8 @@ A small Python library for working with ReVanced CLI and patch bundles. It provi
 
 ## Installation
 
-1. Clone the repository.
-2. Install Python dependencies:
-
 ```bash
-pip install httpx lxml pyaxmlparser
-```
-
-3. Configure paths in `src/re1sid_lib/common.py`:
-
-```python
-PATCHES_PATH = ".revanced_res/patches.rvp"
-CLI_PATH = ".revanced_res/revanced-cli.jar"
+pip install re1sid-lib
 ```
 
 ## Usage
@@ -41,7 +31,7 @@ CLI_PATH = ".revanced_res/revanced-cli.jar"
 Use the downloader helper to fetch the latest CLI jar and patches bundle.
 
 ```python
-from re1sid_lib.downloader import Downloader
+from re1sid_lib import Downloader
 
 downloader = Downloader()
 downloader.download_all()
@@ -50,7 +40,7 @@ downloader.download_all()
 Or download individual assets:
 
 ```python
-from re1sid_lib.downloader import Downloader
+from re1sid_lib import Downloader
 
 downloader = Downloader()
 downloader.download_cli()
@@ -62,7 +52,7 @@ downloader.download_patches_rvp()
 Use the patcher helper to parse the patch list and inspect options.
 
 ```python
-from re1sid_lib.patcher import Patcher
+from re1sid_lib import Patcher
 
 patcher = Patcher()
 patches = patcher.list_patches(package_name="com.spotify.music")
@@ -75,7 +65,7 @@ for patch in patches:
 Patch an APK file with specific enabled/disabled patches and options.
 
 ```python
-from re1sid_lib.patcher import Patcher
+from re1sid_lib import Patcher
 
 patcher = Patcher()
 output = patcher.patch_apk(
@@ -97,12 +87,6 @@ print(output)
 - `Downloader.download_all()` removes the `.revanced_res` directory before downloading fresh assets.
 - `Patcher.list_patches()` can also accept an APK path and will read its package name automatically.
 - The library expects the ReVanced CLI jar and patches bundle to exist at the configured paths.
-
-## Project structure
-
-- `src/re1sid_lib/downloader.py` - Download helper for ReVanced CLI and patches.
-- `src/re1sid_lib/patcher.py` - Patch helper and CLI output parser.
-- `src/re1sid_lib/common.py` - Common path configuration.
 
 ## License
 

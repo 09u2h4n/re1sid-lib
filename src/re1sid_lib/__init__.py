@@ -1,4 +1,4 @@
-from downloader import Downloader
-from patcher import Patcher
+from .downloader import Downloader
+from .patcher import Patcher
 
 __all__ = ["Downloader", "Patcher"]

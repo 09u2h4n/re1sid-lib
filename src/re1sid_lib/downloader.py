@@ -4,7 +4,7 @@ import os
 import shutil
 from lxml import html
 
-from common import PATCHES_PATH, CLI_PATH
+from .common import PATCHES_PATH, CLI_PATH
 
 class Downloader:
     def __init__(self) -> None:
