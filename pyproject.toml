@@ -1,9 +1,9 @@
 [project]
 name = "re1sid-lib"
-version = "0.1.0"
+version = "0.1.2"
 description = "Add your description here"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "Apache-2.0 license" }
 authors = [
     { name = "09u2h4n", email = "09u2h4n.y1lm42@gmail.com" }
 ]
