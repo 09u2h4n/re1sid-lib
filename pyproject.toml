@@ -7,7 +7,11 @@ authors = [
     { name = "09u2h4n", email = "09u2h4n.y1lm42@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+    "lxml>=6.1.1",
+    "pyaxmlparser>=0.3.31",
+]
 
 [project.scripts]
 re1sid-lib = "re1sid_lib:main"

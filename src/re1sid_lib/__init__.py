@@ -1,2 +1,4 @@
-def main() -> None:
-    print("Hello from re1sid-lib!")
+from downloader import Downloader
+from patcher import Patcher
+
+__all__ = ["Downloader", "Patcher"]
