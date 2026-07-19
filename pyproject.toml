@@ -1,7 +1,17 @@
 [project]
 name = "re1sid-lib"
 version = "0.1.0"
-description ="This is a python library and a wrapper for re1sid-ui"
+description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "09u2h4n", email = "09u2h4n.y1lm42@gmail.com" }
+]
 requires-python = ">=3.12"
 dependencies = []
+
+[project.scripts]
+re1sid-lib = "re1sid_lib:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
