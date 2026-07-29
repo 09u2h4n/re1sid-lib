@@ -93,6 +93,8 @@ Patch an APK file with tui via uv
 uv tool run re1sid-lib
 ```
 
+![screenshot](https://raw.githubusercontent.com/09u2h4n/re1sid-lib/refs/heads/master/image-2.png)
+
 ## Notes
 
 - `Downloader.download_all()` removes the `.revanced_res` directory before downloading fresh assets.
