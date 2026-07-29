@@ -1,7 +1,7 @@
 [project]
 name = "re1sid-lib"
-version = "0.2.4"
-description = "Add your description here"
+version = "0.3.0"
+description = "A small Python library for working with ReVanced CLI and patch bundles. It provides helpers to download required ReVanced assets and to patch APK files programmatically."
 readme = "README.md"
 license = { text = "Apache-2.0 license" }
 authors = [
