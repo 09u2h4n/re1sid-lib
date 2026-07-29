@@ -1,3 +1,5 @@
+![sid](image.png)
+
 # re1sid-lib
 
 A small Python library for working with ReVanced CLI and patch bundles. It provides helpers to download required ReVanced assets and to patch APK files programmatically.
@@ -17,6 +19,7 @@ A small Python library for working with ReVanced CLI and patch bundles. It provi
   - `httpx`
   - `lxml`
   - `pyaxmlparser`
+  - `textual`
 
 ## Installation
 
@@ -84,16 +87,10 @@ print(output)
 
 ### Patch an APK via terminal user interface
 
-Patch an APK file with tui
-
-## Installation
-
-```pip install re1sid["tui"]```
+Patch an APK file with tui via uv
 
 ```python
-from re1sid_lib import Re1sidTUI()
-
-Re1sidTUI().run()
+uv tool run re1sid-lib
 ```
 
 ## Notes

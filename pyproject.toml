@@ -1,6 +1,6 @@
 [project]
 name = "re1sid-lib"
-version = "0.2.1"
+version = "0.2.3"
 description = "Add your description here"
 readme = "README.md"
 license = { text = "Apache-2.0 license" }
@@ -12,10 +12,9 @@ dependencies = [
     "httpx>=0.28.1",
     "lxml>=6.1.1",
     "pyaxmlparser>=0.3.31",
+    "textual>=8.2.8",
 ]
 
-[project.optional-dependencies]
-tui = ["textual>=8.2.8"]
 
 all = [
     "httpx>=0.28.1",
@@ -30,7 +29,7 @@ repository = "https://github.com/09u2h4n/re1sid-lib"
 documentation = "https://github.com/09u2h4n/re1sid-lib#readme"
 
 [project.scripts]
-re1sid-lib = "re1sid_lib:main"
+re1sid-lib = "re1sid_lib.tui:main"
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]
