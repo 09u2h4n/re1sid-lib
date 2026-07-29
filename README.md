@@ -1,4 +1,4 @@
-![sid](https://raw.githubusercontent.com/09u2h4n/re1sid-lib/refs/heads/master/image.png)
+![sid](https://raw.githubusercontent.com/09u2h4n/re1sid-lib/refs/heads/master/Images/image.png)
 
 # re1sid-lib
 
@@ -93,7 +93,7 @@ Patch an APK file with tui via uv
 uv tool run re1sid-lib
 ```
 
-![screenshot](https://raw.githubusercontent.com/09u2h4n/re1sid-lib/refs/heads/master/image-2.png)
+![screenshot](https://raw.githubusercontent.com/09u2h4n/re1sid-lib/refs/heads/master/Images/image-2.png)
 
 ## Notes
 
