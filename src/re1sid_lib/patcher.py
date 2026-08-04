@@ -309,23 +309,23 @@ class Patcher:
         if enabled_patches:
             for patch in enabled_patches:
                 if isinstance(patch, int):
-                    cmd.extend(["--ei", str(patch)])
+                    cmd.extend(["--ei", f'"{patch}"'])
                 else:
-                    cmd.extend(["-e", str(patch)])
+                    cmd.extend(["-e", f'"{patch}"'])
 
         if disabled_patches:
             for patch in disabled_patches:
                 if isinstance(patch, int):
-                    cmd.extend(["--di", str(patch)])
+                    cmd.extend(["--di", f'"{patch}"'])
                 else:
-                    cmd.extend(["-d", str(patch)])
+                    cmd.extend(["-d", f'"{patch}"'])
 
         if options:
             for key, val in options.items():
                 if val is None:
                     cmd.append(f"-O{key}")
                 else:
-                    cmd.append(f"-O{key}={self._format_option_value(val)}")
+                    cmd.append(f'-O"{key}={self._format_option_value(val)}"')
 
         if purge:
             cmd.append("--purge")
@@ -339,8 +339,18 @@ if __name__ == "__main__":
     patcher = Patcher()
     # Example usage: List patches for a specific package
     try:
-        patches = patcher.list_patches(package_name="com.spotify.music")
-        for patch in patches:
-            print(patch)
+        patches = patcher.list_patches(package_name="com.google.android.youtube")
+        print(patches[38])
     except Exception as e:
         print(f"Error: {e}")
+
+    patcher.patch_apk(
+        apk_path="/home/oguzhan/re1sid-lib/youtube.apk",
+        enabled_patches=["Custom branding"],
+        options={"App name": "nigger"},
+        exclusive=False,
+        force=True,
+        bypass_verification=True,
+        purge=True,
+        stream_output=True,
+    )
